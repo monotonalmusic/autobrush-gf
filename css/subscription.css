@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+:root {
+    --green:"427F47";
+    --lightgreen:"76B972";
+    --yellow:"F4B344";
+    --purple:"7F427A";
+
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.green-bg {
+    background-color: #76B972!important;
+}
+
+.sub-container {
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+}
+
+.sub-text-div {
+    width: 70%;
+}
+
+.sub-item {
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.sub-img {
+    height: 200px;
+}
+
+.price {
+    color: black;
+    font-weight:600
+}
+
+
+.sub-img-small {
+    height: 100px;
+}
+
+.sub-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+#soap-price-div {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#amount-select {
+    width: 30px;
+}
+
+#checkout-button {
+    background-color: #427F47;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .sub-container {
+        padding: 10vw;
+    }
+    .sub-item {
+        flex-flow: row;
+        width: 100%;
+    }
+
+
+}
