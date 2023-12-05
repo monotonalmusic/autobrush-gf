@@ -9,6 +9,7 @@
   width: 100%;
   overflow: auto;
   display: flex;
+  /*make media query here to center at big screen*/
   justify-content: start;
   align-items: center;
   scroll-snap-type: x mandatory;
@@ -66,5 +67,9 @@
   .box {
     height: 600px;
     width: 300px;
+  }
+
+  .slider-container {
+    justify-content: center;
   }
 }
