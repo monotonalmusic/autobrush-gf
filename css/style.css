@@ -130,6 +130,10 @@ header {
 }
 
 @media (min-width:760px) {
+
+    #sub-section {
+        padding-top: 100px;
+    }
     .overlay {
         top: 150px;
     }

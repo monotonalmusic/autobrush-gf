@@ -43,6 +43,7 @@ p {
 }
 
 .sub-item {
+    cursor: pointer;
     padding: 20px;
     display: flex;
     flex-flow: column;
