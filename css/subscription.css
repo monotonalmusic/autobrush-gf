@@ -35,21 +35,28 @@ p {
 .sub-container {
     display: flex;
     flex-flow: column;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
 .sub-text-div {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
     width: 70%;
 }
 
 .sub-item {
+    width: 100%;
+    gap: 20px;
     cursor: pointer;
     padding: 20px;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: start;
+
     background-color: lightgray;
 }
 
@@ -71,13 +78,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px
 }
 
 #soap-price-div {
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 10px;
 }
@@ -87,6 +93,7 @@ p {
 }
 
 #checkout-button {
+    width: 50%;
     background-color: #427F47;
     color: white;
     border: none;

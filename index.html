@@ -15,6 +15,8 @@
     <title>Autobrush</title>
 </head>
 <body>
+    <!-- decide on header text size, and if it should be in dynamic sizes or static sizes -->
+    <!-- decide on whether text should be whitesmoke or just white -->
     <header>
         <div class="header-container">
             <img src="images/logo-brush.png" id="brush-pic">
@@ -23,22 +25,31 @@
     </header>
     <div class="hero-wrapper">
         <div class="hero-section">
+            <!-- a bit dull, needs more text/to fill space -->
             <video autoplay muted loop id="myVideo">
                 <source src="/images/hero.mp4" type="video/mp4">
             </video>
             <div class="overlay">
-                <p id="hero-text">An eco-friendly solution to dishwashing</p>
+                <div class="hero-text-div">
+                    <p id="hero-text">An eco-friendly solution to dishwashing</p>
+                    <p>Make your dishwashing experience more convenient, without the need of a dishwasher.</p>
+
+                </div>
+                
             </div>
             <div class="overlay-button">
-                <button id="hero-button">see our brush</button>
+                <button id="hero-button" onClick="document.getElementById('slider-container').scrollIntoView()">see our brush</button>
             </div>
+            
         </div>
 
     </div>
     
 
     <section class="mission-sec">
-        <div class="our-mission"><h2>our mission</h2></div>
+        <div class="our-mission">
+        <h2>our mission</h2></div>
+        <!-- should the text be centered in box? maybe not -->
         <div class="mission-wrapper">
             <div class="mission-left">
             </div>
@@ -55,24 +66,25 @@
             </div>
             <div class="feature2 feature">
                 <h2>Easy charging</h2>
-                <p>The brush comes with rechargeable batteries and can be charged within the brush.</p>
+                <p>The brush comes with rechargeable batteries, chargeable by solar power, or through USB-C port. Put the brush in a sunny windowsill, and be ready to do the dishes when you've finished your meal.</p>
                 <div></div>
             </div>
             <div class="feature3 feature">
                 <div></div>
                 <h2>UV light</h2>
-                <p>UV light emitter kills bacteria instantly.</p>
+                <p>UV light emitter kills bacteria instantly, giving you peace of mind when washing particularly dirty dishes, such as a cutting board used for raw meat or fish. </p>
             </div>
             <div class="feature4 feature">
                 <h2>Scraper</h2>
-                <p>Our built-in scraper is specially designed to remove food that has dried in place.</p>
+                <p>Our built-in scraper is specially designed to remove food that has dried in place without harming the dishes.</p>
                 <div></div>
             </div>
         </div>
     
     </section>
     <section id="sub-section">
-        <ul class="slider-container">
+        <!-- add arrow in mobile size, so you can see it is a slider more easily -->
+        <ul class="slider-container" id="slider-container">
             <li class="box brush1"><img src="images/BlackBrush.png" class="brush"><p id="black-text">black</p></li>
             <li class="box brush2"><img src="images/BurntOrangeBrush.png" class="brush"><p id="orange-text">orange</p></li>
             <li class="box brush3"><img src="images/greenbrush.png" class="brush"><p id="green-text">green</p></li>
@@ -80,6 +92,8 @@
             <li class="box brush5"><img src="images/RedBlackBrush.png" class="brush"><p id="red-text">red</p></li>
         </ul>
         <div class="sub-container">
+            <!-- make space between soap + brush smaller -->
+            <!-- dropdown to choose color of brush -->
             <div id="sub-item-1" class="sub-item">
                 <div class="sub-img-container">
                     <img src="images/BlackBrush.png" class="sub-img">
@@ -123,12 +137,14 @@
                 
     
             </div>
+            <!-- optional: add modal with checkout cart when you press checkout -->
             <button id="checkout-button">checkout</button>
         </div>
 
     </section>
     
      <footer>
+    <!-- phone number, email, address needs to be centered, possibly make map smaller?  -->
     <div class="footer-left">
       <iframe class="footer-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.595007433865!2d9.446279560700384!3d56.4639794029357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464be49bb98e8c8b%3A0xcf2bc632d2763f21!2sSkaldeh%C3%B8jvej%202%2C%208800%20Viborg!5e1!3m2!1sda!2sdk!4v1665652644218!5m2!1sda!2sdk"
