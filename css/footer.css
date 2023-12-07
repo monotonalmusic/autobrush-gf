@@ -11,7 +11,6 @@
 }
 
 html {
-  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -24,17 +23,25 @@ li {
   list-style: none;
 }
 
+
+h3{
+  font-family: "Quicksand", sans-serif;
+}
 /* ===== RESET END ===== */
 
 /* CSS START */
 
 footer {
-    color: whitesmoke;
+  color: white;
   width: 100vw;
   background: #7f427a;
 }
 footer i {
-    color: whitesmoke;
+    color: white;
+}
+
+footer p {
+  font-family: "Poppins", sans-serif;
 }
 
 footer div {
@@ -75,21 +82,41 @@ iframe {
   font-size: 1.2rem;
 }
 
+.footer-right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-right ul li {
+  font-family: "Poppins", sans-serif;
+}
+
 .footer-links {
+  width: 60vw;
   font-size: 2rem;
+}
+
+.footer-links a {
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 900px) {
   footer {
     display: flex;
-    justify-content: space-around;
     height: 50vh;
   }
+
+.footer-center {
+  
+}
+
   .footer-left {
-    width: 40vw;
+    width: 33.34vw;
   }
+
   iframe {
-    width: 40vw;
+    width: 33.34vw;
     height: 50vh;
   }
 }

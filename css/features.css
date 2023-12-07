@@ -18,17 +18,24 @@
 }
 
 
-.feature > h2, .feature > p{
-    color: whitesmoke;
+.feature > h2{
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
+.feature > p{
+    color: white;
     font-family: 'Poppins', sans-serif;
+    line-height: 2;
 }
 
 .feature-title{
     text-align: center;
     color: #7F427A;
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
+    font-family: "Quicksand", sans-serif;
+    font-size: 4rem;
     margin: 2vh;
+    
 }
 
 .feature-container{
@@ -66,7 +73,8 @@
 @media screen and (min-width: 1140px){
     
     .feature-title{
-        font-size: 4rem;
+        font-size:4rem;
+        margin-top: 4vh;
     }
 
     .feature{

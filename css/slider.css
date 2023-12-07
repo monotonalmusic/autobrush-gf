@@ -62,6 +62,12 @@
   color: #851D27;
 }
 
+#brushes-title{
+    color: #7F427A;
+    font-family: "Quicksand", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
 
 @media (min-width: 1140px) {
   .box {
