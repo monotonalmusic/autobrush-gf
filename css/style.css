@@ -35,6 +35,10 @@ p {
     
 }
 
+#email:valid {
+    border: 2px solid #76B972;
+}
+
 #hero-text-2 {
     color: white;
     font-size: 1.5rem;
@@ -43,7 +47,13 @@ p {
 
 button {
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    opacity: .9;
 
+}
+
+button:hover {
+    opacity: 1;
 }
 
 header {

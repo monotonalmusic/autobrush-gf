@@ -7,10 +7,15 @@ let subItems = document.querySelectorAll('.sub-item');
 let subAddButton = document.querySelectorAll('.sub-add-button');
 
 subAddButton.forEach(function (item) {
-    item.addEventListener('click', function () {   
-        item.classList.toggle('green-bg');
+    item.addEventListener('click', function () {
+        if (item.classList.contains('green-bg')) {
+            item.classList.toggle('green-bg');
+            return;
+        } else {
+            alert('Item added to cart!'); 
+            item.classList.toggle('green-bg');
+        }
     });
-
 });
 
 let brushArray = [
@@ -39,4 +44,9 @@ dropdown2Items.forEach(function (item, index) {
         dropdown2Text.innerHTML = item.innerHTML;
         brushPic2.setAttribute('src', brushArray[index]);
     });
-})
+});
+
+function checkout () {
+    alert('Redirecting to payment page...');
+}
+

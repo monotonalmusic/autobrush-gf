@@ -11,8 +11,9 @@ document.querySelector("form").addEventListener("submit", function (e) {
     alert("Please enter your name.");
   }
 
-  form.classList.add("validated");
-  output.innerHTML = `Thanks for subscribing to our newsletter!`;
+    form.classList.add("validated");
+    output.innerHTML = `Thanks for subscribing to our newsletter!`;
+    setTimeout(closeNewsLetter, 3000);
 });
 
 close.addEventListener("click", function () {
@@ -23,4 +24,8 @@ let openNewsletter = function () {
   formwrapper.style.display = "flex";
 };
 
-setTimeout(openNewsletter, 100000);
+function closeNewsLetter() {
+  formwrapper.style.display = "none";
+}
+
+setTimeout(openNewsletter, 30000);

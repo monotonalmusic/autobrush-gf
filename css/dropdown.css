@@ -15,7 +15,18 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  #dropdown1-text,
+  #dropdown2-text {
+    font-size: 1.2rem;
+    margin-top: -40px;
+    z-index: 1;
+    color: black;
+  }
   
+  #dropdown-content1 {
+    display: none;
+  }
   @media screen and (max-width: 768px) {
     .menu {
       display: none;

@@ -107,7 +107,16 @@ iframe {
     height: 50vh;
   }
 
+  .footer-right {
+    align-items: end;
+  }
+
+  .footer-right ul {
+    align-items: end;
+  }
+
 .footer-center {
+  margin: 0 20px;
   
 }
 

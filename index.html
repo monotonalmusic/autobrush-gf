@@ -105,7 +105,7 @@
             <div id="sub-item-1" class="sub-item">
                 <div class="sub-img-container">
                     <li class="dropdown">
-                        <a href="#" id="dropdown1-text">color</a>
+                        <p id="dropdown1-text" onclick="toggleDropdown()">color</p>
                         <ul class="dropdown-content">
                             <li class="dropdown1-item">black</li>
                             <li class="dropdown1-item">orange</li>
@@ -125,13 +125,13 @@
                     </div>
                     
                     <p class="price">$34.99</p>
-                    <p class="sub-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem rerum modi, eius sunt atque numquam harum dolor, id mollitia doloremque nulla nisi laborum eaque ea? Facere facilis accusantium fugit!</p>
+                    <p class="sub-text">A one time purchase of a brush of your choosing, and a refill of soap, expected to last about a month of daily use.</p>
                     
                 </div> 
     
             </div>
             <div id="sub-item-2" class="sub-item">
-                <div class="sub-img-container">
+                <div class="sub-img-container" id="three-month-img-div">
                     <li class="dropdown">
                         <p id="dropdown2-text">color</p>
                         <ul class="dropdown-content">
@@ -146,13 +146,13 @@
                     <img src="images/3-soaps.png" class="sub-img-small">
     
                 </div>
-                <div class="sub-text-div">
+                <div class="sub-text-div" id="three-month-text">
                     <div class="sub-header-div">
-                        <h1>3 months</h1> <button id="3-month-add" class="sub-add-button"> + </button>
+                        <h1>3 months</h1> <button id="three-month-add" class="sub-add-button"> + </button>
                         
                     </div>
                     <p class="price">$29.99, then recurring payments of $11.99</p>
-                    <p class="sub-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas incidunt accusantium tenetur et, harum nulla, repellat laboriosam ad corrupti porro voluptates reprehenderit commodi! Nulla eaque adipisci quibusdam earum, voluptatibus velit.</p>
+                    <p class="sub-text">A recurring 3-month subscription, consisting of a brush and 3 month’s worth of soap. Brush included first month. In the case that a replacement brush is needed, let us know and we will send it right away.</p>
                     
                 </div>
                 
@@ -164,14 +164,14 @@
                 </div>
                 <div class="sub-text-div">
                     <div class="sub-header-div">
-                        <h1>Soap</h1> <button id="soap-add" class="sub-add-button"> + </button>
+                        <h1>Soap refill</h1> <button id="soap-add" class="sub-add-button"> + </button>
 
                     </div>
                     <div id="soap-price-div">
                         <p class="price">$4.99</p>
-                        <input type="number" id="amount-select">
+                        <input type="number" id="amount-select" value="1">
                     </div>
-                    <p class="sub-text">Lorem ipsum dolor sit amet.</p>
+                    <p class="sub-text">Soap (eco-friendly, biodegradable, BPA free, and unscented).</p>
                     
     
                 </div>
@@ -179,7 +179,7 @@
     
             </div>
             <!-- optional: add modal with checkout cart when you press checkout -->
-            <button id="checkout-button">checkout</button>
+            <button id="checkout-button" onclick="checkout()">checkout</button>
         </div>
 
     </section>
@@ -190,7 +190,7 @@
             <p class="close">x</p>
             <p>Please consider subscribing to our newsletter!</p>
             <label>Email:
-                <input type="text" id="email" name="email" placeholder="email" required>
+                <input type="text" id="email" name="email" placeholder="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$]">
             </label>
 
             <input type="submit" value="Submit">
