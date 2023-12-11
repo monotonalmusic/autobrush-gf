@@ -28,4 +28,4 @@ function closeNewsLetter() {
   formwrapper.style.display = "none";
 }
 
-setTimeout(openNewsletter, 30000);
+setTimeout(openNewsletter, 3000);

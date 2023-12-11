@@ -28,6 +28,33 @@ li {
   text-align: center;
 }
 
+#modal-form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#email {
+  height: 35px;
+}
+
+#submit-button {
+  display: grid;
+  place-content: center;
+  height: auto;
+  width: 10rem;
+  background-color: #427F47;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
 /* ===== RESET END ===== */
 
 /* CSS START */
