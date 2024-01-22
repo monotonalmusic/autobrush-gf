@@ -158,6 +158,7 @@ header {
 }
 
 .hero-text-div {
+    padding: 10px;
     border-radius: 25px;
     background-color: rgba(0, 0, 0, .3);
 }
